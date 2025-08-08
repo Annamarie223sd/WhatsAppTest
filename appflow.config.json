@@ -1,0 +1,28 @@
+{
+  "build": {
+    "ios": {
+      "commands": [
+        "chmod +x node_modules/.bin/* || true",
+        "npm run build",
+        "npx cap sync ios"
+      ],
+      "environment": {
+        "NODE_ENV": "production"
+      }
+    }
+  },
+  "platforms": {
+    "ios": {
+      "buildType": "release",
+      "signing": {
+        "certificateType": "development"
+      }
+    }
+  },
+  "environments": {
+    "production": {
+      "NODE_ENV": "production",
+      "IONIC_ENV": "prod"
+    }
+  }
+}
