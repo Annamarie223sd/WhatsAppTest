@@ -2,5 +2,14 @@
   "name": "WhatsApp Chat Generator",
   "integrations": {},
   "type": "react",
-  "id": "76b7d836"
+  "id": "76b7d836",
+  "hooks": {
+    "build:before": "echo 'Starting build with Node.js direct execution'"
+  },
+  "build": {
+    "web": {
+      "command": "node node_modules/vite/bin/vite.js build",
+      "dir": "dist"
+    }
+  }
 }
