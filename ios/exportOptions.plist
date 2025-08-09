@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
     <key>method</key>
-    <string>development</string>
+    <string>ad-hoc</string>
     <key>teamID</key>
-    <string>YOUR_TEAM_ID</string>
+    <string>XP77TPN9TB</string>
     <key>uploadBitcode</key>
     <false/>
     <key>uploadSymbols</key>
@@ -13,13 +13,13 @@
     <key>compileBitcode</key>
     <false/>
     <key>signingStyle</key>
-    <string>automatic</string>
+    <string>manual</string>
     <key>destination</key>
     <string>export</string>
     <key>provisioningProfiles</key>
     <dict>
-        <key>com.zzh.app</key>
-        <string>YOUR_PROVISIONING_PROFILE_NAME</string>
+        <key>com.gsqzs9199.sign5043</key>
+        <string>00008020-00067CC83E46002E83</string>
     </dict>
 </dict>
 </plist>
