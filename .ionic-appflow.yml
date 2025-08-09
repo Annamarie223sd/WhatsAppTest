@@ -10,5 +10,8 @@ build:
 
 platforms:
   ios:
-    buildType: development
+    buildType: release
+    signing:
+      certificateType: distribution
+      profileType: adhoc
 
