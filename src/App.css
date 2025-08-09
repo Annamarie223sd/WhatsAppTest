@@ -100,7 +100,7 @@
   color: #333;
   padding: 10px 15px;
   display: flex;
-  padding-top: 20px;
+  padding-top: 40px;
   align-items: center;
   justify-content: space-between;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -220,7 +220,7 @@
 }
 
 .message {
-  max-width: 65%;
+  max-width: 180px;
   padding: 6px 12px;
   border-radius: 18px;
   position: relative;
@@ -276,24 +276,23 @@
   line-height: 1.4;
   word-wrap: break-word;
   overflow-wrap: break-word;
-  flex: 1;
-  min-width: 0;
   font-weight: 500;
+  display: inline;
 }
 
 .message-time {
   font-size: 11px;
-  color: #3f5e37  ;
-  display: flex;
+  color: #3f5e37;
+  display: inline-flex;
   align-items: flex-end;
-  justify-content: flex-end;
   gap: 3px;
-  line-height: 1;
+  line-height: 1.5;
   flex-wrap: nowrap;
-  flex-shrink: 0;
-  margin: 0;
-  position: relative;
-  top: -3px;
+  white-space: nowrap;
+  float: right;
+  clear: both;
+  margin-top: 4px;
+  width: 45px; /* 设置固定宽度 */
 }
 
 .message-time .read-receipts {
@@ -330,7 +329,8 @@
 .message.received .message-time {
   justify-content: flex-start;
   margin-left: 8px;
-  margin-right: 10px;
+  margin-right: -20px;
+  margin-top: 9px;
 }
 
 .message-image {
@@ -1051,11 +1051,9 @@
 } 
 
 .message-row {
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
-  gap: 10px;
+  display: block;
   width: 100%;
+  overflow: hidden;
 } 
 
 .image-message-time {
@@ -1498,9 +1496,9 @@
 .message-text.editable {
   cursor: pointer;
   transition: background-color 0.2s;
-  border-radius: 4px;
-  padding: 2px 4px;
-  margin: -2px -4px;
+  border-radius: 4px; 
+  margin-right: 10px;
+  margin-left: -5px;
 }
 
 .message-text.editable:hover {
